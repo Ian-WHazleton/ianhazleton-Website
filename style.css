@@ -65,6 +65,17 @@ section h2 {
   align-items: baseline;
 }
 
+.item h3 a {
+  font-size: 0.8rem;
+  color: #007acc;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.item h3 a:hover {
+  text-decoration: underline;
+}
+
 .item h3 span {
   font-weight: normal;
   font-size: 0.95rem;
@@ -98,9 +109,33 @@ section h2 {
   font-size: 0.9rem;
 }
 
+/* Columns */
+.columns {
+  display: flex;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1;
+  min-width: 0;
+}
+
+.project-description {
+  font-style: italic;
+  color: #666;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 600px) {
   .item h3 {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+@media (max-width: 700px) {
+  .columns {
+    flex-direction: column;
   }
 }
