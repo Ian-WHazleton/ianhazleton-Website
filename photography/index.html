@@ -13,6 +13,9 @@
 
         body {
             font-family: 'Segoe UI', sans-serif;
+        }
+
+        .hero-section {
             height: 100vh;
             background-image: url('images/photo1.jpg');
             background-size: cover;
@@ -61,6 +64,176 @@
             color: black;
         }
 
+        .concert-section, .sports-section, .individual-section {
+            background: #f9f9f9;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid #aaa;
+        }
+
+        .individual-section {
+            border-bottom: none; /* Remove border from last section */
+        }
+
+        .concert-section h2, .sports-section h2, .individual-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #007acc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: underline;
+            text-decoration-color: transparent;
+            display: inline-block;
+        }
+
+        .concert-section h2:hover, .sports-section h2:hover, .individual-section h2:hover {
+            color: #005a99;
+            text-decoration-color: #005a99;
+            transform: translateY(-2px);
+        }
+
+        .concert-section a, .sports-section a, .individual-section a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .concert-section a::after, .sports-section a::after, .individual-section a::after {
+            content: " →";
+            font-size: 2rem;
+            margin-left: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .concert-section a:hover::after, .sports-section a:hover::after, .individual-section a:hover::after {
+            transform: translateX(10px);
+        }
+
+        .concert-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .concert-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .concert-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .concert-btn {
+            background: #333;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .concert-btn:hover {
+            background: #555;
+            transform: translateY(-2px);
+        }
+
+        .sports-section {
+            background: #f9f9f9;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .sports-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .sports-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .sports-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .sports-btn {
+            background: #333;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .sports-btn:hover {
+            background: #555;
+            transform: translateY(-2px);
+        }
+
+        .individual-section {
+            background: #f9f9f9;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .individual-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+        }
+
+        .individual-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .individual-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .individual-btn {
+            background: #333;
+            color: white;
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .individual-btn:hover {
+            background: #555;
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 600px) {
             .hero-text {
                 padding: 2rem;
@@ -70,14 +243,85 @@
             .hero-text h1 {
                 font-size: 2rem;
             }
+
+            .concert-section h2 {
+                font-size: 2rem;
+            }
+
+            .concert-gallery {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            .concert-gallery img {
+                height: 200px;
+            }
+
+            .sports-section h2 {
+                font-size: 2rem;
+            }
+
+            .sports-gallery {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            .sports-gallery img {
+                height: 200px;
+            }
+
+            .individual-section h2 {
+                font-size: 2rem;
+            }
+
+            .individual-gallery {
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(4, 1fr);
+            }
+
+            .individual-gallery img {
+                height: 200px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="hero-text">
-        <h1>GonzoBlue Photography</h1>
-        <p>Capturing moments, creating memories</p>
-        <a href="../index.html" class="back-link">← Back to Resume</a>
+    <div class="hero-section">
+        <div class="hero-text">
+            <h1>GonzoBlue Photography</h1>
+            <p>Capturing moments, creating memories</p>
+            <a href="../index.html" class="back-link">← Back to Resume</a>
+        </div>
+    </div>
+
+    <div class="concert-section">
+        <a href="concerts.html"><h2>Concert Photos</h2></a>
+        <div class="concert-gallery">
+            <img src="images/concert1.jpg" alt="Concert Photo 1">
+            <img src="images/concert2.jpg" alt="Concert Photo 2">
+            <img src="images/concert3.jpg" alt="Concert Photo 3">
+            <img src="images/concert4.jpg" alt="Concert Photo 4">
+        </div>
+    </div>
+
+    <div class="sports-section">
+        <a href="sports.html"><h2>Sports Photography</h2></a>
+        <div class="sports-gallery">
+            <img src="images/sports1.jpg" alt="Sports Photo 1">
+            <img src="images/sports2.jpg" alt="Sports Photo 2">
+            <img src="images/sports3.jpg" alt="Sports Photo 3">
+            <img src="images/sports4.jpg" alt="Sports Photo 4">
+        </div>
+    </div>
+
+    <div class="individual-section">
+        <a href="individual.html"><h2>Individual Photography</h2></a>
+        <div class="individual-gallery">
+            <img src="images/individual1.jpg" alt="Individual Photo 1">
+            <img src="images/individual2.jpg" alt="Individual Photo 2">
+            <img src="images/individual3.jpg" alt="Individual Photo 3">
+            <img src="images/individual4.jpg" alt="Individual Photo 4">
+        </div>
     </div>
 </body>
 </html>
