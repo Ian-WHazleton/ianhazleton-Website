@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxmox Home Lab Project - Ian Hazleton</title>
+    <link rel="stylesheet" href="blog-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="nav-brand">
+                    <h1>Ian Hazleton</h1>
+                    <span class="subtitle">Software Developer</span>
+                </div>
+                <div class="nav-links">
+                    <a href="BlogHome.html">Home</a>
+                    <a href="BlogTemp.html">Projects</a>
+                    <a href="index.html">Resume</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <h2>Proxmox Home Lab with OMV NAS</h2>
+                <p>Building a virtualized home server environment for photography workflow and system administration practice</p>
+            </section>
+
+            <section class="projects">
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Project Overview</h3>
+                        <div class="project-meta">
+                            <span class="date">2023 - Present</span>
+                            <div class="tags">
+                                <span class="tag">Proxmox</span>
+                                <span class="tag">Linux</span>
+                                <span class="tag">Virtualization</span>
+                                <span class="tag">NAS</span>
+                                <span class="tag">OpenMediaVault</span>
+                                <span class="tag">RAID 5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-summary">
+                            Built a comprehensive virtualized home server environment using Proxmox VE hypervisor with OpenMediaVault as a dedicated NAS solution for photography workflow management and system administration learning.
+                        </p>
+
+                        <h4>Hardware Specifications</h4>
+                        <ul>
+                            <li><strong>CPU:</strong> AMD Ryzen 5 1600</li>
+                            <li><strong>GPU:</strong> GTX 1060 (for hardware acceleration if needed)</li>
+                            <li><strong>RAM:</strong> 32GB DDR4</li>
+                            <li><strong>Boot Drive:</strong> M.2 SSD for Proxmox OS and VM storage</li>
+                            <li><strong>Storage:</strong> Two RAID 5 arrays (3x 2TB drives + 3x 3TB drives)</li>
+                            <li><strong>Total Storage:</strong> ~8TB usable capacity after RAID redundancy</li>
+                            <li><strong>Project Cost:</strong> ~$100 (only needed to purchase 3TB drives)</li>
+                        </ul>
+
+                        <h4>Project Goals</h4>
+                        <ul>
+                            <li>Repurpose old PC hardware after upgrading to newer system</li>
+                            <li>Create centralized storage for photography workflow (RAW NEF and JPEG files)</li>
+                            <li>Learn Proxmox virtualization and network-attached storage concepts</li>
+                            <li>Build a foundation for future Linux testing and development</li>
+                            <li>Implement data redundancy with RAID configuration</li>
+                        </ul>
+
+                        <h4>Technical Implementation</h4>
+                        <p>
+                            The project began in 2023 after upgrading my main PC, allowing me to repurpose the previous hardware into a dedicated home lab server. The setup involved configuring dual RAID 5 arrays for maximum storage efficiency while maintaining data redundancy.
+                        </p>
+
+                        <ul>
+                            <li><strong>Proxmox VE Installation:</strong> Installed hypervisor on M.2 SSD for fast boot and VM operations</li>
+                            <li><strong>RAID Configuration:</strong> Set up two separate RAID 5 arrays - one with 3x2TB drives and another with 3x3TB drives</li>
+                            <li><strong>OpenMediaVault VM:</strong> Deployed OMV as primary NAS solution with proper resource allocation</li>
+                            <li><strong>Network Shares:</strong> Configured SMB/CIFS shares for Windows desktop and laptop access</li>
+                            <li><strong>Storage Management:</strong> Currently storing ~500GB of RAW NEF and JPEG photography files, plus ~50GB of music collection (MP3/FLAC from online purchases and cassette digitization)</li>
+                            <li><strong>Plex Media Server:</strong> Configured Plex for remote music streaming to mobile devices</li>
+                        </ul>
+
+                        <h4>Current Usage & Workflow</h4>
+                        <ul>
+                            <li>Primary access from Windows desktop and laptop for photography backup</li>
+                            <li>Automated backup of both RAW NEF files and processed JPEG images</li>
+                            <li>Music collection storage: ~50GB of MP3 and FLAC files from online purchases and cassette digitization</li>
+                            <li>Remote music streaming via Plex app on mobile phone for on-the-go access</li>
+                            <li>Centralized storage allowing access from multiple devices</li>
+                            <li>RAID 5 redundancy protecting against single drive failures</li>
+                            <li>Foundation for testing additional Linux distributions and services</li>
+                        </ul>
+
+                        <h4>Key Learning Outcomes</h4>
+                        <ul>
+                            <li>Gained hands-on experience with Proxmox VE hypervisor management</li>
+                            <li>Understanding of network-attached storage (NAS) concepts and implementation</li>
+                            <li>RAID configuration and storage redundancy principles</li>
+                            <li>Virtualization best practices and resource allocation</li>
+                            <li>Network configuration and SMB/CIFS protocol setup</li>
+                            <li>Linux system administration in production environment</li>
+                        </ul>
+
+                        <h4>Future Enhancement Plans</h4>
+                        <ul>
+                            <li>Deploy additional VMs for Linux distribution testing and development</li>
+                            <li>Implement Docker containerization for microservices learning</li>
+                            <li>Set up automated backup scheduling for photography workflow</li>
+                            <li>Add monitoring and alerting for system health and drive status</li>
+                            <li>Expand Plex capabilities for photo and video streaming</li>
+                            <li>Create isolated testing environments for software development</li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="BlogTemp.html" class="btn btn-secondary">← Back to Projects</a>
+                            <a href="BlogHome.html" class="btn btn-primary">View Portfolio</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ian Hazleton. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
