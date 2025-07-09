@@ -1,95 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ian H. — Resume</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Hazleton - Software Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Ian Hazleton</h1>
-      <p class="title">Computer Information Systems</p>
-      <p class="contact">ian@ianhazleton.com • github.com/Ian-WHazleton • (972) 653-0043</p>
+    <header class="header">
+        <div class="container">
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <div class="nav-brand">
+                    <h1>Ian Hazleton</h1>
+                    <span class="subtitle">Software Developer</span>
+                </div>
+                <ul class="nav-links" role="menubar">
+                    <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="projects.html" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="resume.html" role="menuitem">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="columns">
-      <div class="column">
-        <section>
-          <h2>About Me</h2>
-          <p>I'm a Computer Information Systems student at Louisiana Tech University, focused on IT support and server maintenance. I've built a strong foundation in programming with experience in HTML, CSS, C++, Python, and Java.
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <h2>Welcome to My Portfolio</h2>
+                <p>I'm a passionate software developer creating innovative solutions through clean code and modern technologies.</p>
+            </section>
 
-I'm eager to apply my technical skills in real-world settings and contribute to efficient, reliable IT systems. As I approach graduation, I'm actively seeking opportunities to grow and support forward-thinking tech teams.</p>
-        </section>
+            <section class="home-content">
+                <section class="about-section">
+                    <header>
+                        <h2>About Me</h2>
+                    </header>
+                    <p>I'm a Computer Information Systems student at Louisiana Tech University with a passion for IT infrastructure and system administration. My experience spans from programming languages like Python, Java, and C++ to hands-on work with virtualization technologies and network-attached storage systems.</p>
+                    
+                    <p>Currently, I'm building practical experience through my Proxmox home lab, where I manage virtualized environments, RAID configurations, and media streaming services. This project has deepened my understanding of Linux systems, storage management, and network administration.</p>
+                    
+                    <p>When I'm not coding or managing servers, I enjoy photography and have developed a workflow that integrates my technical skills with creative pursuits. I'm actively seeking opportunities to apply my technical knowledge in real-world IT environments and contribute to innovative technology solutions.</p>
+                    
+                    <div class="quick-facts">
+                        <div class="fact">
+                            <strong>Current Focus:</strong> Virtualization & System Administration
+                        </div>
+                        <div class="fact">
+                            <strong>Expected Graduation:</strong> February 2027
+                        </div>
+                        <div class="fact">
+                            <strong>Home Lab:</strong> Proxmox + OpenMediaVault + Plex
+                        </div>
+                    </div>
+                </section>
 
-        <section>
-          <h2>Experience</h2>
-          <div class="item">
-            <h3><span>Tooling Inventory</span></h3>
-            <p class="company">Cox Machine</p>
-            <p class="date">November 2022 - February 2023<br>June 2023 - August 2023</p>
-            <ul>
-              <li>Managed inventory tracking and organization</li>
-              <li>Maintained accurate stock records and database entries</li>
-              <li>Ordered replacement tools for worn equipment and new tooling for changing manufacturing requirements</li>
-            </ul>
-          </div>
-        </section>
-      </div>
-      <div class="column">
-        <section>
-          <h2>Education</h2>
-          <p><strong>BS in Computer Information Science</strong><br>
-          Louisiana Tech University<br>
-          August 2020 - May 2021, March 2022 - Present<br>
-          <em>Expected Graduation: February 2027</em></p>
-        </section>
+                <div class="skills-section">
+                    <h3>Technical Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">HTML5</span>
+                                <span class="skill-tag">CSS3</span>
+                                <span class="skill-tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Backend</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">C++</span>
+                                <span class="skill-tag">C</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Database</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">SQL</span>
+                                <span class="skill-tag">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Tools & Systems</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">GitHub</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">Windows Server</span>
+                                <span class="skill-tag">Proxmox</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4>Infrastructure</h4>
+                            <div class="skills-tags">
+                                <span class="skill-tag">Proxmox</span>
+                                <span class="skill-tag">Linux</span>
+                                <span class="skill-tag">RAID</span>
+                                <span class="skill-tag">NAS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <section>
-          <h2>Skills</h2>
-          <ul class="skills">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java</li>
-            <li>C++</li>
-            <li>C</li>
-            <li>Git</li>
-            <li>SQL</li>
-            <li>Python</li>
-          </ul>
-        </section>
+                <div class="featured-projects">
+                    <h3>Featured Projects</h3>
+                    <div class="project-preview-grid">
+                        <div class="project-preview">
+                            <h4>Personal Portfolio Website</h4>
+                            <p>A responsive portfolio website showcasing my skills and projects, built with HTML, CSS, and JavaScript featuring a dark theme and modern design.</p>
+                            <div class="preview-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <h4><a href="projects/proxmox.html" style="text-decoration: none; color: inherit;">Proxmox Home Lab with OMV NAS</a></h4>
+                            <p>Built a virtualized home server environment with network-attached storage for photography workflow management and system administration practice.</p>
+                            <div class="preview-tags">
+                                <span class="tag">Proxmox</span>
+                                <span class="tag">Linux</span>
+                                <span class="tag">Virtualization</span>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a href="projects/proxmox.html" class="btn btn-primary" style="font-size: 0.875rem; padding: 0.5rem 1rem;">View Details</a>
+                            </div>
+                        </div>
+                        <div class="project-preview">
+                            <h4>Database Management System</h4>
+                            <p>Developed database solutions for inventory tracking and data management using SQL and MySQL for efficient data storage and retrieval.</p>
+                            <div class="preview-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Database Design</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-section">
+                        <a href="projects.html" class="btn btn-primary">View All Projects</a>
+                        <a href="resume.html" class="btn btn-secondary">View Resume</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
-        <section>
-          <h2>Projects</h2>
-          <div class="item">
-            <h3><span>Personal Website</span> <a href="https://github.com/Ian-WHazleton/ianhazleton-Website" target="_blank">GitHub</a></h3>
-            <p class="project-description">A responsive portfolio website showcasing my skills and experience in web development.</p>
-            <ul>
-              <li>Built responsive portfolio website using HTML, CSS, and JavaScript</li>
-              <li>Implemented modern design principles and mobile-first approach</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <h3><span>Proxmox Home Lab with OMV NAS</span></h3>
-            <p class="project-description">Built a virtualized home server environment with network-attached storage for photography workflow management.</p>
-            <ul>
-              <li>Deployed Proxmox VE hypervisor for virtual machine management</li>
-              <li>Configured OpenMediaVault VM as dedicated NAS for film and video storage</li>
-              <li>Implemented RAID configuration for data redundancy and performance</li>
-              <li>Set up network shares and user permissions for photography workflow</li>
-            </ul>
-          </div>
-        </section>
-      </div>
-    </div>
-    
-    <!-- Bottom Navigation -->
-    <nav class="bottom-nav">
-      <a href="BlogHome.html">Portfolio Home</a>
-      <a href="photography/index.html">Photography</a>
-    </nav>
-  </div>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Ian Hazleton. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
