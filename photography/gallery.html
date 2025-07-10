@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concert Photography - GonzoBlue</title>
+    <title>Photography Gallery - GonzoBlue</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="gallery.css">
 </head>
@@ -12,8 +12,8 @@
         <nav class="gallery-nav">
             <a href="index.html" class="nav-brand">GonzoBlue Photography</a>
             <div class="nav-links">
-                <a href="gallery.html">All Photos</a>
-                <a href="concerts.html" class="active">Concerts</a>
+                <a href="gallery.html" class="active">All Photos</a>
+                <a href="concerts.html">Concerts</a>
                 <a href="sports.html">Sports</a>
                 <a href="individual.html">Individual</a>
                 <a href="../index.html">Portfolio</a>
@@ -23,19 +23,22 @@
 
     <main class="gallery-main">
         <section class="gallery-hero">
-            <h1>Concert Photography</h1>
-            <p>Capturing the energy and emotion of live music performances</p>
+            <h1>Photography Gallery</h1>
+            <p>Capturing moments across concerts, sports, and individual sessions</p>
         </section>
 
         <section class="gallery-filters">
-            <button class="filter-btn active" data-filter="all">All Concerts</button>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="concerts">Concerts</button>
+            <button class="filter-btn" data-filter="sports">Sports</button>
+            <button class="filter-btn" data-filter="individual">Individual</button>
             <button class="filter-btn" data-filter="rock">Rock</button>
             <button class="filter-btn" data-filter="indie">Indie</button>
             <button class="filter-btn" data-filter="electronic">Electronic</button>
         </section>
 
         <section class="photo-grid" id="photo-grid">
-            <!-- Concert photos only will be loaded here -->
+            <!-- Photos will be loaded here -->
         </section>
 
         <!-- Lightbox Modal -->
@@ -55,7 +58,7 @@
             <a class="next" onclick="changePhoto(1)">&#10095;</a>
         </div>
     </main>
-    <script src="js/photo-data.js"></script>
+
     <script src="js/cloudinary-service.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/animations.js"></script>

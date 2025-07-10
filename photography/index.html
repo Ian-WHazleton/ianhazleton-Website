@@ -16,17 +16,18 @@
             font-family: 'Inter', sans-serif;
             background: #0f172a;
             color: #f1f5f9;
+            margin: 0;
+            padding: 0;
         }
 
         .hero-section {
             height: 100vh;
-            background-image: url('images/photo1.jpg');
             background-size: cover;
             background-position: center;
-            background-attachment: fixed;
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
         }
 
         .hero-text {
@@ -72,10 +73,15 @@
         }
 
         .concert-section, .sports-section, .individual-section {
-            background: #1e293b;
-            padding: 4rem 2rem;
-            text-align: center;
-            border-bottom: 1px solid #334155;
+            position: relative;
+            z-index: 10;
+            background: #0f172a;
+            padding: 3rem 2rem;
+            margin: 0;
+        }
+
+        .concert-section {
+            padding-top: 4rem;
         }
 
         .individual-section {
@@ -183,6 +189,11 @@
                 height: 200px;
             }
         }
+
+        /* Fix for content being hidden */
+        html {
+            scroll-behavior: smooth;
+        }
     </style>
 </head>
 <body>
@@ -195,33 +206,50 @@
     </div>
 
     <div class="concert-section">
+        <a href="gallery.html"><h2>All Photos</h2></a>
         <a href="concerts.html"><h2>Concert Photos</h2></a>
         <div class="concert-gallery">
-            <img src="images/concert1.jpg" alt="Concert Photo 1">
-            <img src="images/concert2.jpg" alt="Concert Photo 2">
-            <img src="images/concert3.jpg" alt="Concert Photo 3">
-            <img src="images/concert4.jpg" alt="Concert Photo 4">
+            <img alt="Concert Photo 1">
+            <img alt="Concert Photo 2">
+            <img alt="Concert Photo 3">
+            <img alt="Concert Photo 4">
+            <img alt="Concert Photo 5">
+            <img alt="Concert Photo 6">
+            <img alt="Concert Photo 7">
+            <img alt="Concert Photo 8">
         </div>
     </div>
 
     <div class="sports-section">
         <a href="sports.html"><h2>Sports Photography</h2></a>
         <div class="sports-gallery">
-            <img src="images/sports1.jpg" alt="Sports Photo 1">
-            <img src="images/sports2.jpg" alt="Sports Photo 2">
-            <img src="images/sports3.jpg" alt="Sports Photo 3">
-            <img src="images/sports4.jpg" alt="Sports Photo 4">
+            <img alt="Sports Photo 1">
+            <img alt="Sports Photo 2">
+            <img alt="Sports Photo 3">
+            <img alt="Sports Photo 4">
+            <img alt="Sports Photo 5">
+            <img alt="Sports Photo 6">
+            <img alt="Sports Photo 7">
+            <img alt="Sports Photo 8">
         </div>
     </div>
 
     <div class="individual-section">
         <a href="individual.html"><h2>Individual Photography</h2></a>
         <div class="individual-gallery">
-            <img src="images/individual1.jpg" alt="Individual Photo 1">
-            <img src="images/individual2.jpg" alt="Individual Photo 2">
-            <img src="images/individual3.jpg" alt="Individual Photo 3">
-            <img src="images/individual4.jpg" alt="Individual Photo 4">
+            <img alt="Individual Photo 1">
+            <img alt="Individual Photo 2">
+            <img alt="Individual Photo 3">
+            <img alt="Individual Photo 4">
+            <img alt="Individual Photo 5">
+            <img alt="Individual Photo 6">
+            <img alt="Individual Photo 7">
+            <img alt="Individual Photo 8">
         </div>
     </div>
+    <script src="js/photo-data.js"></script>
+    <script src="js/cloudinary-service.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>

@@ -3,72 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Individual Photography - GonzoBlue Photography</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: #f9f9f9;
-            padding: 2rem;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            color: #333;
-        }
-
-        .back-link {
-            color: #007acc;
-            text-decoration: none;
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
-            display: inline-block;
-        }
-
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
-        .temp-message {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            margin-top: 2rem;
-        }
-
-        .temp-message h2 {
-            color: #666;
-            margin-bottom: 1rem;
-        }
-
-        .temp-message p {
-            font-size: 1.1rem;
-            color: #888;
-        }
-    </style>
+    <title>Individual Photography - GonzoBlue</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Individual Photography</h1>
-        <a href="index.html" class="back-link">← Back to Photography</a>
-        
-        <div class="temp-message">
-            <h2>Coming Soon!</h2>
-            <p>This page is under construction. Individual photos will be available soon.</p>
+    <header class="gallery-header">
+        <nav class="gallery-nav">
+            <a href="index.html" class="nav-brand">GonzoBlue Photography</a>
+            <div class="nav-links">
+                <a href="gallery.html">All Photos</a>
+                <a href="concerts.html">Concerts</a>
+                <a href="sports.html">Sports</a>
+                <a href="individual.html" class="active">Individual</a>
+                <a href="../index.html">Portfolio</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="gallery-main">
+        <section class="gallery-hero">
+            <h1>Individual Photography</h1>
+            <p>Personal portraits, senior photos, and professional headshots</p>
+        </section>
+
+        <section class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All Individual</button>
+            <button class="filter-btn" data-filter="senior">Senior Photos</button>
+            <button class="filter-btn" data-filter="portrait">Portraits</button>
+            <button class="filter-btn" data-filter="professional">Professional</button>
+        </section>
+
+        <section class="photo-grid" id="photo-grid">
+            <!-- Individual photos only will be loaded here -->
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox" class="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <div class="lightbox-info">
+                <h3 id="photo-title"></h3>
+                <p id="photo-description"></p>
+                <div class="photo-meta">
+                    <span id="photo-camera"></span>
+                    <span id="photo-settings"></span>
+                    <span id="photo-date"></span>
+                </div>
+            </div>
+            <a class="prev" onclick="changePhoto(-1)">&#10094;</a>
+            <a class="next" onclick="changePhoto(1)">&#10095;</a>
         </div>
-    </div>
+    </main>
+    <script src="js/photo-data.js"></script>
+    <script src="js/cloudinary-service.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/animations.js"></script>
 </body>
 </html>
